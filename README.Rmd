@@ -14,20 +14,35 @@ options(width=120)
 
 # ipasnhistory
 
+Retrive Announcement History for IP Addresses
+
 ## Description
+
+IP ASN History is an open source project (<https://github.com/D4-project/IPASN-History>)
+to figure out the ASN announcing an IP and the closest prefix announcing it
+at a specific date. Methods are provided to query CIRCL-LU's API endpoint
+and/or a local API endpoint.
 
 ## What's Inside The Tin
 
 The following functions are implemented:
 
+- `ip_asn_db_meta`:	Returns meta informations about the information currently stored in the database at the specified endpoint
+- `ip_history`:	Retrieve IP ASN advertisement history
+- `mass_cache`:	Populate the API cache
+- `mass_query`:	Mass query IP ASN history info
+- `timedelta`:	Construct a time delta value for 'ip_history()'
+
 ## Installation
 
 ```{r install-ex, eval=FALSE}
-devtools::install_git("https://sr.ht.com/~hrbrmstr/ipasnhistory.git")
+install.packages("ipasnhistory", repos="https://cinc.rud.is/")
+# or 
+remotes::install_git("https://sr.ht.com/~hrbrmstr/ipasnhistory.git")
 # or
-devtools::install_git("https://gitlab.com/hrbrmstr/ipasnhistory.git")
+remotes::install_gitlab("hrbrmstr/ipasnhistory")
 # or (if you must)
-devtools::install_github("hrbrmstr/ipasnhistory")
+remotes::install_github("hrbrmstr/ipasnhistory")
 ```
 
 ## Usage
@@ -40,6 +55,14 @@ packageVersion("ipasnhistory")
 
 ```
 
+```{r}
+str( ip_asn_db_meta(), 2 )
+
+str( ip_history("146.185.222.49"), 3 )
+
+str( ip_history("146.185.222.49", first="2018-11-01", last="2018-11-25"), 3 )
+```
+
 ## ipasnhistory Metrics
 
 ```{r cloc, echo=FALSE}
@@ -48,5 +71,4 @@ cloc::cloc_pkg_md()
 
 ## Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
-By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

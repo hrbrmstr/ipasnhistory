@@ -1,6 +1,6 @@
 Package: ipasnhistory
 Type: Package
-Title: ipasnhistory title goes here otherwise CRAN checks fail
+Title: Retrive Announcement History for IP Addresses
 Version: 0.1.0
 Date: 2019-03-24
 Authors@R: c(
@@ -8,7 +8,10 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: IP ASN History is an open source project (<https://github.com/D4-project/IPASN-History>)
+    to figure out the ASN announcing an IP and the closest prefix announcing it
+    at a specific date. Methods are provided to query CIRCL-LU's API endpoint
+    and/or a local API endpoint.
 URL: https://gitlab.com/hrbrmstr/ipasnhistory
 BugReports: https://gitlab.com/hrbrmstr/ipasnhistory/issues
 Encoding: UTF-8
