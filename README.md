@@ -3,7 +3,7 @@
 Status](https://travis-ci.org/hrbrmstr/ipasnhistory.svg?branch=master)](https://travis-ci.org/hrbrmstr/ipasnhistory)
 [![Coverage
 Status](https://codecov.io/gh/hrbrmstr/ipasnhistory/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/ipasnhistory)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ipasnhistory)](https://cran.r-project.org/package=ipasnhistory)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ipasnhistory)](https://cran.r-project.org/package=ipasnhistory)
 
 # ipasnhistory
 
