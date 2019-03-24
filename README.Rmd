@@ -14,7 +14,7 @@ options(width=120)
 
 # ipasnhistory
 
-Retrive Announcement History for IP Addresses
+Retrieve Announcement History for IP Addresses
 
 ## Description
 

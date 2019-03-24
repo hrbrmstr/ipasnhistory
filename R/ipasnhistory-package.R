@@ -1,4 +1,4 @@
-#' Retrive Announcement History for IP Addresses
+#' Retrieve Announcement History for IP Addresses
 #'
 #' IP ASN History is an open source project (<https://github.com/D4-project/IPASN-History>)
 #' to figure out the ASN announcing an IP and the closest prefix announcing it

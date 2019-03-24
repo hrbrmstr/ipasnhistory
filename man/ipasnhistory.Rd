@@ -4,7 +4,7 @@
 \name{ipasnhistory}
 \alias{ipasnhistory}
 \alias{ipasnhistory-package}
-\title{Retrive Announcement History for IP Addresses}
+\title{Retrieve Announcement History for IP Addresses}
 \description{
 IP ASN History is an open source project (\url{https://github.com/D4-project/IPASN-History})
 to figure out the ASN announcing an IP and the closest prefix announcing it

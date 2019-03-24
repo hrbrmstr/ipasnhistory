@@ -7,7 +7,7 @@ Status](https://codecov.io/gh/hrbrmstr/ipasnhistory/branch/master/graph/badge.sv
 
 # ipasnhistory
 
-Retrive Announcement History for IP Addresses
+Retrieve Announcement History for IP Addresses
 
 ## Description
 
