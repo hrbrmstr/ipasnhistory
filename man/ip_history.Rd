@@ -4,14 +4,15 @@
 \alias{ip_history}
 \title{Retrieve IP ASN advertisement history}
 \usage{
-ip_history(ip, source = "caida", address_family = c("v4", "v6"),
-  date = NULL, first = NULL, last = NULL, precision_delta = NULL,
+ip_history(ip, source = c("caida", "ripe_rrc00"),
+  address_family = c("v4", "v6"), date = NULL, first = NULL,
+  last = NULL, precision_delta = NULL,
   ip_asn_history_endpoint = "https://bgpranking-ng.circl.lu/ipasn_history/")
 }
 \arguments{
 \item{ip}{(required) IP to lookup}
 
-\item{source}{(optional) Source to query (defaults to 'caida') - currently, only caida is supported}
+\item{source}{(optional) Source to query (defaults to 'caida') - currently, supports CAIDA & RIPE NCC sources}
 
 \item{address_family}{(optional) \code{v4} or \code{v6} (defaults to v4)}
 

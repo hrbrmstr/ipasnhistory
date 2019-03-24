@@ -14,7 +14,7 @@
 #' @note If using your own server do not add the `/mass_query` at the end of the
 #'       `ip_asn_history_endpoint` URL parameter.
 #' @param ips (required) character vector of IPs to lookup
-#' @param source (optional) Source to query (defaults to 'caida') - currently, only caida is supported
+#' @param source (optional) Source to query (defaults to 'caida') - currently, supports CAIDA & RIPE NCC sources
 #' @param address_family (optional) `v4` or `v6` (defaults to v4)
 #' @param date (optional) Exact date to lookup (defaults to most recent available). Can
 #'        be a date-y/time-y-ish R object or a "YYYY-mm-dd" string

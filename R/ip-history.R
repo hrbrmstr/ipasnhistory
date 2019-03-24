@@ -2,7 +2,7 @@
 #'
 #' @note If you want to resolve more than 1000 IPs, use [mass_cache()] and [mass_query()]
 #' @param ip (required) IP to lookup
-#' @param source (optional) Source to query (defaults to 'caida') - currently, only caida is supported
+#' @param source (optional) Source to query (defaults to 'caida') - currently, supports CAIDA & RIPE NCC sources
 #' @param address_family (optional) `v4` or `v6` (defaults to v4)
 #' @param date (optional) Exact date to lookup (defaults to most recent available). Can
 #'        be a date-y/time-y-ish R object or a "YYYY-mm-dd" string
@@ -16,7 +16,7 @@
 #' ip_history("146.185.222.49")
 #' ip_history("146.185.222.49", first="2018-11-01", last="2018-11-25")
 ip_history <- function(ip,
-                       source = "caida",
+                       source = c("caida", "ripe_rrc00"),
                        address_family = c("v4", "v6"),
                        date = NULL,
                        first = NULL,
@@ -26,7 +26,7 @@ ip_history <- function(ip,
                          "https://bgpranking-ng.circl.lu/ipasn_history/") {
 
   ip <- ip[1]
-  source <- match.arg(source[1], "caida")
+  source <- match.arg(source[1], c("caida", "ripe_rrc00"))
   address_family <- match.arg(address_family[1], c("v4", "v6"))
 
   if (!is.null(date)) date <- as.character(as.Date(date[1]))

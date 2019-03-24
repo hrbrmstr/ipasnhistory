@@ -11,7 +11,7 @@ mass_query(ips, source = NULL, address_family = NULL, date = NULL,
 \arguments{
 \item{ips}{(required) character vector of IPs to lookup}
 
-\item{source}{(optional) Source to query (defaults to 'caida') - currently, only caida is supported}
+\item{source}{(optional) Source to query (defaults to 'caida') - currently, supports CAIDA & RIPE NCC sources}
 
 \item{address_family}{(optional) \code{v4} or \code{v6} (defaults to v4)}
 
